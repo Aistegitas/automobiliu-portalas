@@ -29,3 +29,15 @@ button {
   width: 100%;
   margin-bottom: 10px;
 }
+
+.benzinas {
+  background-color: green;
+}
+
+.dyzelinas {
+  background-color: gray;
+}
+
+.elektra {
+  background-color: blue;
+}
