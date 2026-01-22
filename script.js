@@ -25,8 +25,15 @@ carForm.addEventListener("submit", function (event) {
   <p>${year}</p>
   <p>Automobilio kaina: ${price}</p>
   <p>Automobilio kuras: ${fuel}</p>
-  <p>
+  
+  <button class="delete-btn">Istrinti</button>
+
   `;
+  // pridedam istrynimo logika
+  const deleteBtn = carCard.querySelector(".delete-btn");
+  deleteBtn.addEventListener("click", () => {
+    carCard.remove();
+  });
 
   // pridedu kortele i HTML'a
   carsDiv.appendChild(carCard);
