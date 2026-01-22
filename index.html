@@ -7,5 +7,34 @@
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <form id="carForm">
+        <input
+          id="name"
+          type="text"
+          placeholder="Automobilio pavadinimas "
+          required
+        />
+        <input
+          id="description"
+          type="text"
+          placeholder="Trumpas aprasymas"
+          required
+        />
+        <input id="price" type="number" placeholder="Kaina" required />
+        <input id="image" type="text" placeholder="Nuotraukos URL" required />
+
+        <select id="fuel">
+          <option value="Benzinas">Benzinas</option>
+          <option value="Dyzelinas">Dyzelinas</option>
+          <option value="Elektra">Elektra</option>
+          <option value="Hibridas">Hibridas</option>
+        </select>
+
+        <button type="submit">Prideti</button>
+      </form>
+      <div id="cars"></div>
+    </div>
+  </body>
 </html>
